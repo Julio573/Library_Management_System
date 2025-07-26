@@ -1,16 +1,16 @@
 package model;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.Objects;
 
 public class Author {
 
     private String name;
-    private Date birthDate;
+    private LocalDate birthDate;
     private String nationality;
     private String biography;
 
-    public Author(String name, Date birthDate, String nationality, String biography) {
+    public Author(String name, LocalDate birthDate, String nationality, String biography) {
         this.name = name;
         this.birthDate = birthDate;
         this.nationality = nationality;
@@ -25,11 +25,11 @@ public class Author {
         this.name = name;
     }
 
-    public Date getBirthDate() {
+    public LocalDate getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(Date birthDate) {
+    public void setBirthDate(LocalDate birthDate) {
         this.birthDate = birthDate;
     }
 
